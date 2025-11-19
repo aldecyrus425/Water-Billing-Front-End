@@ -19,39 +19,16 @@ const Register = () => {
         <form className="mt-6 space-y-4">
 
           {/* Full Name */}
-          
-
           <InputGroup label='Full Name' type='text' placeholder='Enter Full Name' />
 
           {/* Email */}
-          <div>
-            <label className="text-gray-700 text-sm font-medium">Email</label>
-            <input
-              type="email"
-              className="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"
-              placeholder="you@example.com"
-            />
-          </div>
+          <InputGroup label='Email' type='email' placeholder='you@example.com' />
 
           {/* Password */}
-          <div>
-            <label className="text-gray-700 text-sm font-medium">Password</label>
-            <input
-              type="password"
-              className="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"
-              placeholder="••••••••"
-            />
-          </div>
+          <InputGroup label='Password' type='password' placeholder='••••••••' />
 
           {/* Confirm Password */}
-          <div>
-            <label className="text-gray-700 text-sm font-medium">Confirm Password</label>
-            <input
-              type="password"
-              className="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"
-              placeholder="••••••••"
-            />
-          </div>
+          <InputGroup label='Confirm Password' type='password' placeholder='••••••••' />
 
           {/* Register Button */}
           <Button label='Create Account' type='submit' />

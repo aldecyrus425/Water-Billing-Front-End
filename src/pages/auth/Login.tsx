@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../../components/Button'
+import { InputGroup } from '../../components/InputGroup'
 
 const Login = () => {
   return (
@@ -17,24 +18,10 @@ const Login = () => {
         {/* Form */}
         <form className="mt-6 space-y-4">
           {/* Email */}
-          <div>
-            <label className="text-gray-700 text-sm font-medium">Email</label>
-            <input
-              type="email"
-              className="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"
-              placeholder="you@example.com"
-            />
-          </div>
+          <InputGroup label='Email' type='email' placeholder='you@example.com' />
 
           {/* Password */}
-          <div>
-            <label className="text-gray-700 text-sm font-medium">Password</label>
-            <input
-              type="password"
-              className="mt-1 w-full px-4 py-2 border rounded-xl focus:ring-2 focus:ring-blue-400 focus:outline-none"
-              placeholder="••••••••"
-            />
-          </div>
+          <InputGroup label='Password' type='password' placeholder='you@example.com' />
 
           {/* Login Button */}
           <Button label='Login' type='submit' />
