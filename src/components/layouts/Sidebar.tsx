@@ -1,4 +1,4 @@
-import { BarChart3, ChevronDown, Droplet, LayoutDashboard, Settings, Users } from 'lucide-react'
+import { BarChart3, BookCheck, ChevronDown, DollarSignIcon, Droplet, LayoutDashboard, Settings, UserCircle, Users, UsersRoundIcon } from 'lucide-react'
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -27,16 +27,6 @@ const menuItems: MenuItem[] = [
     badge: "New",
   },
   {
-    id: "Analytics",
-    icon: BarChart3,
-    label: "Analytics",
-    submenu: [
-      { id: "Overview", label: "Overview", path: "/analytics/overview" },
-      { id: "Reports", label: "Reports", path: "/analytics/reports" },
-      { id: "Insights", label: "Insights", path: "/analytics/insights" },
-    ],
-  },
-  {
     id: "Users",
     icon: Users,
     label: "Users",
@@ -46,6 +36,28 @@ const menuItems: MenuItem[] = [
       { id: "Roles", label: "Roles & Permissions", path: "/users/roles" },
       { id: "Activity", label: "User Activity", path: "/users/activity" },
     ],
+  },
+  {
+    id: "Consumers",
+    icon: UserCircle,
+    label: "Consumers",
+    count: "2.4k",
+    submenu: [
+      { id: "All-Consumers", label: "All Consumers", path: "/users/all" },
+      { id: "Activity", label: "User Activity", path: "/users/activity" },
+    ],
+  },
+  {
+    id: "Readings",
+    icon: BookCheck,
+    label: "Readings",
+    path: "/reading",
+  },
+  {
+    id: "Billing",
+    icon: DollarSignIcon,
+    label: "Billings",
+    path: "/billing",
   },
   {
     id: "Settings",

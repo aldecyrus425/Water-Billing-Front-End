@@ -44,11 +44,7 @@ const TableSection = () => {
                             <td className='p-4'>
                                 <span className={`text-slate-400 dark:text-white font-medium text-xs px-3 py-1 rounded-full`}>Order Status</span>
                             </td>
-                            <td className='p-4'>
-                                <span className='text-sm text-slate-800 dark:text-white'>
-                                    <MoreHorizontal className='w-4 h-4' />
-                                </span>
-                            </td>
+                            
                         </tr>
                     </tbody>
                 </table>
