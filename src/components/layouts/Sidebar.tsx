@@ -1,5 +1,4 @@
 import { BarChart3, ChevronDown, Droplet, LayoutDashboard, Settings, Users } from 'lucide-react'
-import path from 'path';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -89,7 +88,7 @@ const Sidebar = ({ collapsed, onToggle, onPageChange}: SidebarProps) => {
       className={`${collapsed ? "w-20" : "w-72"} transition-all duration-300 ease-in-out bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border-r border-slate-200/50 dark:border-slate-700/50 flex flex-col`}
     >
       {/* Logo */}
-      <div className="p-6 border-b border-slate-200/50 dark:border-slate-700/50">
+      <div className="p-6">
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 bg-linear-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
             <Droplet className="w-6 h-6 text-white" />
@@ -174,6 +173,10 @@ const Sidebar = ({ collapsed, onToggle, onPageChange}: SidebarProps) => {
           );
         })}
       </nav>
+
+      <div>
+        <h1>Profile Information</h1>
+      </div>
     </div>
   );
 }

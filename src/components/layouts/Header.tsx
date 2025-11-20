@@ -19,7 +19,6 @@ const Header = ({sidebarCollapsed, onToggleSidebar, currentPage} : Props) => {
 
                     <div className='hidden md:block'>
                         <h1 className='text-2xl font-black text-slate-800 dark:text-white'>{currentPage}</h1>
-                        <p>Welcome back, Alex! here's what's happening today</p>
                     </div>
                 </div>
 
