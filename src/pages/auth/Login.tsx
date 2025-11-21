@@ -24,7 +24,7 @@ const Login = () => {
           <InputGroup label='Password' type='password' placeholder='you@example.com' />
 
           {/* Login Button */}
-          <Button label='Login' type='submit' />
+          <Button label='Login' type='submit' className='w-full font-bold text-white' />
         </form>
 
         {/* Footer */}

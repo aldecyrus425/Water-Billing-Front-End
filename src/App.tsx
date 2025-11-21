@@ -9,7 +9,9 @@ import UserActivity from "./pages/admin/UserActivity"
 import Consumers from "./pages/admin/Consumers"
 import ConsumerActivity from "./pages/admin/ConsumerActivity"
 import Readings from "./pages/admin/Readings"
-import Billings from "./pages/admin/Billings"
+import UnpaidBillings from "./pages/admin/UnpaidBillings"
+import PaidBillings from "./pages/admin/PaidBillings"
+import CreateBilling from "./pages/admin/AddBilling"
 
 
 function App() {
@@ -27,7 +29,9 @@ function App() {
           <Route path="/consumers/all" element={<Consumers />} />
           <Route path="/consumer/activity" element={<ConsumerActivity />} />
           <Route path="/reading" element={<Readings />} />
-          <Route path="/billing" element={<Billings />} />
+          <Route path="/billings/create" element={<CreateBilling />} />
+          <Route path="/billings/unpaid" element={<UnpaidBillings />} />
+          <Route path="/billings/paid" element={<PaidBillings />} />
           <Route path="/settings" element={<Settings />}/>
         </Route>
       </Routes>

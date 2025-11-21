@@ -31,7 +31,7 @@ const Register = () => {
           <InputGroup label='Confirm Password' type='password' placeholder='••••••••' />
 
           {/* Register Button */}
-          <Button label='Create Account' type='submit' />
+          <Button label='Create Account' type='submit' className='w-full font-bold text-white' />
         </form>
 
         {/* Footer */}

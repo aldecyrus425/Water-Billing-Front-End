@@ -43,7 +43,7 @@ const menuItems: MenuItem[] = [
     count: "2.4k",
     submenu: [
       { id: "All-Consumers", label: "All Consumers", path: "/consumers/all" },
-      { id: "User Activity", label: "User Activity", path: "/consumer/activity" },
+      { id: "Consumer Activity", label: "Consumer Activity", path: "/consumer/activity" },
     ],
   },
   {
@@ -56,7 +56,12 @@ const menuItems: MenuItem[] = [
     id: "Billing",
     icon: DollarSignIcon,
     label: "Billings",
-    path: "/billing",
+    count: "2.4k",
+    submenu: [
+      { id: "Create-Bill", label: "Create Bill", path: "/billings/create" },
+      { id: "Paid-Billings", label: "Paid Billings", path: "/billings/paid" },
+      { id: "Unpaid-Billings", label: "Unpaid Billings", path: "/billings/unpaid" },
+    ],
   },
   {
     id: "Settings",
