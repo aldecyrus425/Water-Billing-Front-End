@@ -1,4 +1,3 @@
-import { MoreHorizontal } from 'lucide-react'
 import React from 'react'
 
 const TableSection = () => {
@@ -16,41 +15,41 @@ const TableSection = () => {
                     </div>
                 </div>
                 <div className='overflow-x-auto'>
-                <table className='w-full'>
-                    <thead>
-                        <tr>
-                            <th className='text-left p-4 text-sm font-semibold text-slate-600'>Order ID</th>
-                            <th className='text-left p-4 text-sm font-semibold text-slate-600'>Customer</th>
-                            <th className='text-left p-4 text-sm font-semibold text-slate-600'>Product</th>
-                            <th className='text-left p-4 text-sm font-semibold text-slate-600'>Amount</th>
-                            <th className='text-left p-4 text-sm font-semibold text-slate-600'>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className='border-b border-slate-200/50 dark:border-slate-700/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors'>
+                    <table className='w-full'>
+                        <thead>
+                            <tr>
+                                <th className='text-left p-4 text-sm font-semibold text-slate-600'>Order ID</th>
+                                <th className='text-left p-4 text-sm font-semibold text-slate-600'>Customer</th>
+                                <th className='text-left p-4 text-sm font-semibold text-slate-600'>Product</th>
+                                <th className='text-left p-4 text-sm font-semibold text-slate-600'>Amount</th>
+                                <th className='text-left p-4 text-sm font-semibold text-slate-600'>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className='border-b border-slate-200/50 dark:border-slate-700/50 hover:bg-slate-50/50 dark:hover:bg-slate-800/50 transition-colors'>
 
-                            <td className='p-4'>
-                                <span className='text-sm font-medium text-blue'>Order ID</span>
-                            </td>
-                            <td className='p-4'>
-                                <span className='text-sm text-slate-800 dark:text-white'>Customer</span>
-                            </td>
-                            <td className='p-4'>
-                                <span className='text-sm text-slate-800 dark:text-white'>Product</span>
-                            </td>
-                            <td className='p-4'>
-                                <span className='text-sm text-slate-800 dark:text-white'>Amount</span>
-                            </td>
-                            <td className='p-4'>
-                                <span className={`text-slate-400 dark:text-white font-medium text-xs px-3 py-1 rounded-full`}>Order Status</span>
-                            </td>
-                            
-                        </tr>
-                    </tbody>
-                </table>
+                                <td className='p-4'>
+                                    <span className='text-sm font-medium text-blue'>Order ID</span>
+                                </td>
+                                <td className='p-4'>
+                                    <span className='text-sm text-slate-800 dark:text-white'>Customer</span>
+                                </td>
+                                <td className='p-4'>
+                                    <span className='text-sm text-slate-800 dark:text-white'>Product</span>
+                                </td>
+                                <td className='p-4'>
+                                    <span className='text-sm text-slate-800 dark:text-white'>Amount</span>
+                                </td>
+                                <td className='p-4'>
+                                    <span className={`text-slate-400 dark:text-white font-medium text-xs px-3 py-1 rounded-full`}>Order Status</span>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            </div>
-            
+
         </div>
     )
 }

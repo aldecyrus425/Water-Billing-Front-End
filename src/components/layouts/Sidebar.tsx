@@ -1,4 +1,4 @@
-import { BarChart3, BookCheck, ChevronDown, DollarSignIcon, Droplet, LayoutDashboard, Settings, UserCircle, Users, UsersRoundIcon } from 'lucide-react'
+import { BookCheck, ChevronDown, DollarSignIcon, Droplet, LayoutDashboard, Settings, UserCircle, Users } from 'lucide-react'
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -33,8 +33,7 @@ const menuItems: MenuItem[] = [
     count: "2.4k",
     submenu: [
       { id: "All-Users", label: "All Users", path: "/users/all" },
-      { id: "Roles", label: "Roles & Permissions", path: "/users/roles" },
-      { id: "Activity", label: "User Activity", path: "/users/activity" },
+      { id: "User Activity", label: "User Activity", path: "/users/activity" },
     ],
   },
   {
@@ -43,8 +42,8 @@ const menuItems: MenuItem[] = [
     label: "Consumers",
     count: "2.4k",
     submenu: [
-      { id: "All-Consumers", label: "All Consumers", path: "/users/all" },
-      { id: "Activity", label: "User Activity", path: "/users/activity" },
+      { id: "All-Consumers", label: "All Consumers", path: "/consumers/all" },
+      { id: "User Activity", label: "User Activity", path: "/consumer/activity" },
     ],
   },
   {
