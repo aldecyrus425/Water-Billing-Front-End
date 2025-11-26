@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { CreateConsumerModal } from '../../components/modals/consumer/addModal'
 
 const Consumers = () => {
+  const [addModal, setAddModal] = useState(false);
   return (
+    <>
     <div className=''>
       <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-b-2xl border border-slate-200/50 dark:border-slate-700/50 overflow-hidden'>
         <div className='p-6 border-b border-slate-200/50 dark:border-slate-700/50 space-y-5'>
@@ -10,7 +13,7 @@ const Consumers = () => {
               <h3 className='text-lg font-bold text-slate-800 dark:text-white'>Consumers</h3>
               <p className='text-sm text-slate-500 dark:text-slate-400'>List's of all consumers</p>
             </div>
-            <button className='border rounded-lg p-3 text-blue-600 hover:text-white hover:bg-blue-600 text-sm font-medium cursor-pointer '>Add Consumer</button>
+            <button className='border rounded-lg p-3 text-blue-600 hover:text-white hover:bg-blue-600 text-sm font-medium cursor-pointer ' onClick={() => setAddModal(true)}>Add Consumer</button>
           </div>
           <div className='overflow-y-scroll'>
             <table className='w-full max-h-170'>
@@ -43,6 +46,9 @@ const Consumers = () => {
         </div>
       </div>
     </div>
+    <CreateConsumerModal isVisible={addModal} onClose={() => setAddModal(false)}/>
+    </>
+
   )
 }
 

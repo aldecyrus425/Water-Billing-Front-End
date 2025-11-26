@@ -58,7 +58,6 @@ const menuItems: MenuItem[] = [
     label: "Billings",
     count: "2.4k",
     submenu: [
-      { id: "Create-Bill", label: "Create Bill", path: "/billings/create" },
       { id: "Paid-Billings", label: "Paid Billings", path: "/billings/paid" },
       { id: "Unpaid-Billings", label: "Unpaid Billings", path: "/billings/unpaid" },
     ],

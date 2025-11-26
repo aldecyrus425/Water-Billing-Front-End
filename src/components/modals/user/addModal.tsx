@@ -36,6 +36,8 @@ export const CreateUserModal = ({ isVisible, onclose }: Props) => {
                         <InputGroup label="Phone" placeholder="Please Enter Phone Number" />
                         <InputGroup label="Profile Picture" type="file" placeholder="" />
                     </div>
+
+                    
                     <FormButton onClose={onclose} />
                 </form>
             </div>

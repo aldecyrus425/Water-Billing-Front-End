@@ -4,7 +4,6 @@ import { UpdateUserModal } from '../../components/modals/user/updateModal';
 import { TableButton } from '../../components/TableButtons';
 
 const Users = () => {
-
     const [addUserModal, setAddUserModal] = useState(false);
     const [updateUserModal, setUpdateUserModal] = useState(false);
     return (
