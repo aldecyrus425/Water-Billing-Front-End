@@ -4,18 +4,22 @@ import { SelectGroup } from "../../SelectGroup"
 import type React from "react"
 import { ModalHeader } from "../modalHeader"
 import { FormButton } from "../../FormButton"
+import { useState } from "react"
 
 interface Props {
     isVisible: boolean;
     onclose: () => void;
 }
 
+
 export const CreateUserModal = ({ isVisible, onclose }: Props) => {
+
+    
 
     const submitUserInformation = (e: React.FormEvent) => {
         e.preventDefault();
         
-        console.log("Hellow")
+        
     }
     
     return isVisible &&
@@ -31,8 +35,8 @@ export const CreateUserModal = ({ isVisible, onclose }: Props) => {
                         ]} />
                         <InputGroup label="Address" placeholder="Please Enter Address" />
                         <InputGroup label="Email" type="email" placeholder="Please Enter Email" />
-                        <InputGroup label="Password" type="password" placeholder="Please Create Password" />
-                        <InputGroup label="Password" type="password" placeholder="Please Create Password" />
+                        <InputGroup label="Password" type="password" placeholder="Please Enter Password" />
+                        <InputGroup label="Confirm Password" type="password" placeholder="Please Enter Confirm Password" />
                         <InputGroup label="Phone" placeholder="Please Enter Phone Number" />
                         <InputGroup label="Profile Picture" type="file" placeholder="" />
                     </div>

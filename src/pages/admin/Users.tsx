@@ -1,11 +1,37 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { CreateUserModal } from '../../components/modals/user/addModal'
 import { UpdateUserModal } from '../../components/modals/user/updateModal';
 import { TableButton } from '../../components/TableButtons';
+import axios from 'axios';
+import { USER_URL } from '../../utils/URI';
+
+interface User {
+
+}
+
 
 const Users = () => {
     const [addUserModal, setAddUserModal] = useState(false);
     const [updateUserModal, setUpdateUserModal] = useState(false);
+
+    const [users, setUsers] = useState<User | null>(null);
+
+    useEffect(() => {
+        fetchUserList();
+    }, [])
+
+    const fetchUserList = async () => {
+        try {
+
+            const res = await axios.get<User[]>(USER_URL);
+            setUsers(res.data);
+
+        } catch (error) {
+
+        }
+    }
+
+    
     return (
         <div>
             <div className='bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl rounded-b-2xl border border-slate-200/50 dark:border-slate-700/50 overflow-hidden'>

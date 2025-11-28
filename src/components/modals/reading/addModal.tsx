@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FormButton } from "../../FormButton";
 import { InputGroup } from "../../InputGroup";
 import { ModalContainer } from "../modalContainer";
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export const CreateReadingModal = ({ isVisible, onClose }: Props) => {
-
+    
     return (
         isVisible &&
         <ModalContainer>
@@ -35,7 +36,7 @@ export const CreateReadingModal = ({ isVisible, onClose }: Props) => {
                         <InputGroup label="Account Number" placeholder="" isDisabled value="123891371289" />
                         <InputGroup label="Meter Number" placeholder="" isDisabled />
                         <InputGroup label="Previous Reading" placeholder="" value="1234" isDisabled />
-                        <InputGroup label="Current Reading" placeholder="Please Enter Current Reading" />  
+                        <InputGroup label="Current Reading" placeholder="Please Enter Current Reading"/>  
                     </div>
                     <FormButton onClose={onClose} />
                 </form>
